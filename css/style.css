@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: "TrajanPro";
+  font-family: "Vazirmatn";
 }
 
 body {
@@ -58,20 +58,21 @@ body {
   align-items: start;
   justify-content: start;
   flex-direction: column;
-  padding: 12rem 4rem 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../imges/background_landing.jfif) no-repeat center center;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 2rem 0;
+  background: linear-gradient(rgba(63, 39, 26, 0.6), rgba(63, 39, 26, 0.6)),
+    url(../imges/IMG_2464.PNG) no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
-  height: 45rem;
+  height: 30rem;
 }
 
 .main-header__title {
   color: #fff5d4;
   width: 100%;
   text-align: left;
-  font-family: "TrajanPro bold";
+  font-family: "TrajanPro";
 }
 
 .main-header__name-title {
@@ -85,7 +86,7 @@ body {
 }
 
 .main-header__text {
-  width: 100%;
+  align-self: flex-end;
   color: #fff5d4;
   text-align: right;
 }
