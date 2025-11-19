@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   direction: rtl;
+  padding-top: 9rem;
 }
 
 *,
@@ -33,11 +34,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: 9rem;
   background-color: #fff5d4;
   padding: 0 1rem;
-  box-shadow: 0 0px 10px rgba(59, 37, 24, 0.5);
+  box-shadow: 0 0px 10px rgba(59, 37, 24, 0.8);
 }
 
 .top-bar__name-cafe {
@@ -52,17 +52,17 @@ body {
   height: 7rem;
 }
 
+/* Main Header */
+
 .main-header {
   direction: ltr;
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
-  position: relative;
-  top: 9rem;
   padding: 2rem 2rem 0;
   background: linear-gradient(rgba(63, 39, 26, 0.6), rgba(63, 39, 26, 0.6)),
-    url(../imges/IMG_2464.PNG) no-repeat center center;
+    url(../imges/luce-bg.PNG) no-repeat center center;
   background-size: cover;
   text-align: center;
   height: 30rem;
@@ -89,4 +89,10 @@ body {
   align-self: flex-end;
   color: #fff5d4;
   text-align: right;
+}
+
+/* Main */
+
+.main {
+  background-color: #fff5d4;
 }
