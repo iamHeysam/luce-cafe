@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url(../fonts/vazirmatn/ttf/Vazirmatn-Light.ttf);
+}
+
+@font-face {
+  font-family: "Vazirmatn midium";
+  src: url(../fonts/vazirmatn/ttf/Vazirmatn-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Vazirmatn black";
+  src: url(../fonts/vazirmatn/ttf/Vazirmatn-Black.ttf);
+}
+
+@font-face {
+  font-family: "TrajanPro";
+  src: url(../fonts/TrajanPro/TrajanPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "TrajanPro bold";
+  src: url(../fonts/TrajanPro/TrajanPro-Bold.otf);
+}
