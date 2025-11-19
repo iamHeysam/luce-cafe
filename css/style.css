@@ -36,7 +36,6 @@ body {
   justify-content: space-between;
   height: 9rem;
   background-color: #fff5d4;
-  padding: 0 1rem;
   box-shadow: 0 0px 10px rgba(59, 37, 24, 0.8);
 }
 
@@ -95,4 +94,32 @@ body {
 
 .main {
   background-color: #fff5d4;
+  padding-top: 4rem;
+}
+
+/* category */
+
+.categories {
+  display: flex;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b2518;
+  padding: 0.5rem 1rem;
+  border: 2px solid #3b2518;
+  border-radius: 0.5rem;
+  transition: all ease-in 200ms;
+}
+
+.category__icon {
+  fill: #3b2518;
+}
+
+.category__title {
+  font-size: 2rem;
 }
