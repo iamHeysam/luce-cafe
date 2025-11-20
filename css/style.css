@@ -22,6 +22,11 @@ body {
   box-sizing: inherit;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* Top Bar */
 
 .top-bar {
@@ -97,7 +102,7 @@ body {
 
 .main {
   background-color: #fff5d4;
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 
 /* category */
@@ -127,6 +132,9 @@ body {
 /* menu */
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 2rem;
   padding: 0 1rem;
 }
