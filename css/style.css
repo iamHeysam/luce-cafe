@@ -100,15 +100,19 @@ body {
 /* category */
 
 .categories {
-  display: flex;
   padding: 0 1rem;
-  gap: 1rem;
+}
+
+.categories__slider {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .category {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   color: #3b2518;
   padding: 0.5rem 1rem;
   border: 2px solid #3b2518;
@@ -118,8 +122,10 @@ body {
 
 .category__icon {
   fill: #3b2518;
+  width: 20px;
+  height: 20px;
 }
 
 .category__title {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
