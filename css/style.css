@@ -99,29 +99,21 @@ body {
 
 /* category */
 
-.categories {
-  padding: 0 1rem;
-}
-
-.categories__slider {
-  display: flex;
-  gap: 0.5rem;
-}
-
 .category {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  color: #3b2518;
+  color: #fff5d4;
+  background-color: #3b2518;
   padding: 0.5rem 1rem;
-  border: 2px solid #3b2518;
+  /* border: 2px solid #3b2518; */
   border-radius: 0.5rem;
   transition: all ease-in 200ms;
 }
 
 .category__icon {
-  fill: #3b2518;
+  fill: #fff5d4;
   width: 20px;
   height: 20px;
 }

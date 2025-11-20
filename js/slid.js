@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper-container", {
   speed: 800,
-  loop: true,
+  loop: false,
 
   breakpoints: {
     210: {
