@@ -125,6 +125,15 @@ body {
   height: 20px;
 }
 
+.active {
+  background-color: #3b2518;
+  color: #fff5d4;
+}
+
+.active .category__icon {
+  fill: #fff5d4;
+}
+
 .category__title {
   font-size: 1.6rem;
 }
