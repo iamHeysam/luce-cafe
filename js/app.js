@@ -214,5 +214,7 @@ function chooseCategory(category) {
   showMenu(categories[categoryIndex].category);
 }
 
-showCategories();
-showMenu();
+window.addEventListener("load", () => {
+  showCategories();
+  showMenu();
+});
