@@ -116,7 +116,7 @@ const menu = {
     {
       name: "dd",
       price: "343",
-      about: " لبابالالالا تبتسنمتبنتنیبسیبشسبس",
+      about: " لبابالالالا ",
     },
     {
       name: "ff",
@@ -183,16 +183,12 @@ const showMenu = (category) => {
     menuElem.insertAdjacentHTML(
       "beforeend",
       `
-    <div class="menu-item">
-      <div class="menu-item__header">
+      <div class="menu-item">
         <span class="menu-item__name">${menu.name}</span>
+        <p class="menu-item__about">${menu.about}</p>
         <span class="menu-item__price">${menu.price}</span>
       </div>
-      <div class="menu-item__about">
-        <button class="menu-item__btn">اطلاعات</button>
-      </div>
-    </div>
-    `
+      `
     );
   });
 };

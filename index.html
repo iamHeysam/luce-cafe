@@ -11,8 +11,15 @@
   <body>
     <header class="header">
       <div class="top-bar">
-        <h2 class="top-bar__name-cafe">Café Luće</h2>
-        <img src="./imges/luce-logo.jpg" alt="Luce Logo" class="header__logo" />
+        <div class="green"></div>
+        <div class="white">
+          <img
+            src="./imges/luce-logo.jpg"
+            alt="Luce Logo"
+            class="header__logo"
+          />
+        </div>
+        <div class="red"></div>
       </div>
       <div class="main-header">
         <h1 class="main-header__title">
@@ -23,145 +30,107 @@
       </div>
     </header>
     <main class="main">
-      <div class="categories">
-        <swiper-container
-          class="mySwiper"
-          pagination="false"
-          pagination-clickable="false"
-          slides-per-view="auto"
-          centered-slides="false"
-          space-between="10"
-        >
-          <swiper-slide>
-            <div class="category">
-              <svg
-                class="category__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
-                />
-              </svg>
-              <span class="category__title">بار سرد</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="category">
-              <svg
-                class="category__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
-                />
-              </svg>
-              <span class="category__title">بار سرد</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="category">
-              <svg
-                class="category__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
-                />
-              </svg>
-              <span class="category__title">بار سرد</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="category">
-              <svg
-                class="category__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
-                />
-              </svg>
-              <span class="category__title">بار سرد</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="category">
-              <svg
-                class="category__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
-                />
-              </svg>
-              <span class="category__title">بار سرد</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="category">
-              <svg
-                class="category__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
-                />
-              </svg>
-              <span class="category__title">بار سرد</span>
-            </div>
-          </swiper-slide>
-        </swiper-container>
-      </div>
-      <div class="menu">
-        <div class="menu-item">
-          <div class="menu-item__header">
-            <span class="menu-item__name">کوبالیبرا</span>
-            <span class="menu-item__price">249</span>
-          </div>
-          <div class="menu-item__about">
-            <button class="menu-item__btn">اطلاعات</button>
-          </div>
+      <div class="container">
+        <div class="categories">
+          <swiper-container
+            class="mySwiper"
+            pagination="false"
+            pagination-clickable="false"
+            slides-per-view="auto"
+            centered-slides="false"
+            space-between="10"
+          >
+            <swiper-slide>
+              <div class="category">
+                <svg
+                  class="category__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
+                  />
+                </svg>
+                <span class="category__title">بار سرد</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="category">
+                <svg
+                  class="category__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
+                  />
+                </svg>
+                <span class="category__title">بار سرد</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="category">
+                <svg
+                  class="category__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
+                  />
+                </svg>
+                <span class="category__title">بار سرد</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="category">
+                <svg
+                  class="category__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
+                  />
+                </svg>
+                <span class="category__title">بار سرد</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="category">
+                <svg
+                  class="category__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
+                  />
+                </svg>
+                <span class="category__title">بار سرد</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="category">
+                <svg
+                  class="category__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M768 64a192 192 0 1 1-69.952 370.88L480 725.376V896h96a32 32 0 1 1 0 64H320a32 32 0 1 1 0-64h96V725.376L76.8 273.536a64 64 0 0 1-12.8-38.4v-10.688a32 32 0 0 1 32-32h71.808l-65.536-83.84a32 32 0 0 1 50.432-39.424l96.256 123.264h337.728A192.064 192.064 0 0 1 768 64zM656.896 192.448H800a32 32 0 0 1 32 32v10.624a64 64 0 0 1-12.8 38.4l-80.448 107.2a128 128 0 1 0-81.92-188.16v-.064zm-357.888 64 129.472 165.76a32 32 0 0 1-50.432 39.36l-160.256-205.12H144l304 404.928 304-404.928H299.008z"
+                  />
+                </svg>
+                <span class="category__title">بار سرد</span>
+              </div>
+            </swiper-slide>
+          </swiper-container>
         </div>
-        <div class="menu-item">
-          <div class="menu-item__header">
+        <div class="menu">
+          <div class="menu-item">
             <span class="menu-item__name">کوبالیبرا</span>
+            <p class="menu-item__about">سبتن تنیتب مسابتا تمنتنمسا</p>
             <span class="menu-item__price">249</span>
-          </div>
-          <div class="menu-item__about">
-            <button class="menu-item__btn">اطلاعات</button>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__header">
-            <span class="menu-item__name">کوبالیبرا</span>
-            <span class="menu-item__price">249</span>
-          </div>
-          <div class="menu-item__about">
-            <button class="menu-item__btn">اطلاعات</button>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__header">
-            <span class="menu-item__name">کوبالیبرا</span>
-            <span class="menu-item__price">249</span>
-          </div>
-          <div class="menu-item__about">
-            <button class="menu-item__btn">اطلاعات</button>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__header">
-            <span class="menu-item__name">کوبالیبرا</span>
-            <span class="menu-item__price">249</span>
-          </div>
-          <div class="menu-item__about">
-            <button class="menu-item__btn">اطلاعات</button>
           </div>
         </div>
       </div>
