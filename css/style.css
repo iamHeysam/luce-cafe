@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: "Vazirmatn";
+  font-family: "Iran Sans";
 }
 
 body {
@@ -50,7 +50,8 @@ body {
 .green {
   width: 33%;
   height: 100%;
-  background-color: #009246;
+  /* background-color: #009246; */
+  border-bottom: 5px solid #009246;
 }
 
 .white {
@@ -59,13 +60,15 @@ body {
   justify-content: center;
   width: 34%;
   height: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  border-bottom: 5px solid #fff;
 }
 
 .red {
   width: 33%;
   height: 100%;
-  background-color: #ce2b37;
+  /* background-color: #ce2b37; */
+  border-bottom: 5px solid #ce2b37;
 }
 
 .header__logo {
@@ -82,7 +85,7 @@ body {
     url(../imges/luce-bg.PNG) no-repeat center center;
   background-size: cover;
   text-align: center;
-  height: 30rem;
+  height: 28rem;
   box-shadow: 0 0px 10px rgba(59, 37, 24, 1);
   position: relative;
   z-index: 1;
@@ -100,9 +103,10 @@ body {
 .main-header__text {
   margin-top: 0.5rem;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff5d4;
   text-align: center;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
 }
 
 /* Main */
@@ -114,67 +118,49 @@ body {
 
 /* category */
 
-.menu-container__header {
-  text-align: left;
-}
-
 .menu-container__title {
-  display: inline-block;
-  position: relative;
-  padding: 0.5rem 1rem;
+  text-align: left;
   font-size: 3rem;
-  margin-right: auto;
   font-family: "TrajanPro bold";
-  z-index: 1;
-  margin-bottom: 2rem;
-  background-color: white;
+  margin-bottom: 1rem;
   color: #3b2518;
 }
 
-.menu-container__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 3.5rem;
-  background-color: #009246;
-  z-index: -1;
-}
-
-.menu-container__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 3.5rem;
-  background-color: #ce2b37;
-  z-index: -1;
+.categories {
+  display: flex;
+  row-gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .category {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  width: 10rem;
   color: #3b2518;
-  padding: 0.5rem 1rem;
-  border: 2px solid #6b4729b7;
-  border-radius: 0.5rem;
   transition: all ease-in 200ms;
 }
 
-.category__icon {
-  fill: #3b2518;
-  width: 20px;
-  height: 20px;
+.category__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6b4729b7;
+  border-radius: 100%;
+  width: 7rem;
+  height: 7rem;
 }
 
-.active {
-  border: 2px solid #3b2518;
-  background-color: #3b2518;
-  color: #fff5d4;
+.category__icon {
+  fill: #6b4729ee;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.active .category__icon-box {
+  background-color: #6b4729ee;
 }
 
 .active .category__icon {
@@ -182,7 +168,8 @@ body {
 }
 
 .category__title {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  color: #6b4729ee;
 }
 
 /* menu */
@@ -191,7 +178,7 @@ body {
   display: flex;
   gap: 2rem 1rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .menu-item {

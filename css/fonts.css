@@ -1,16 +1,6 @@
 @font-face {
-  font-family: "Vazirmatn";
-  src: url(../fonts/vazirmatn/ttf/Vazirmatn-Light.ttf);
-}
-
-@font-face {
-  font-family: "Vazirmatn midium";
-  src: url(../fonts/vazirmatn/ttf/Vazirmatn-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Vazirmatn black";
-  src: url(../fonts/vazirmatn/ttf/Vazirmatn-Black.ttf);
+  font-family: "Iran Sans";
+  src: url(../fonts/iran-sans/Iranian\ Sans.ttf);
 }
 
 @font-face {
