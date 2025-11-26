@@ -140,17 +140,17 @@ let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
   const currentY = window.scrollY;
+  const diff = currentY - lastScrollY;
 
-  if (currentY > lastScrollY) {
+  if (diff >= 50) {
     document.body.classList.add("small");
-  } else {
+    console.log(diff);
+    lastScrollY = currentY;
+  } else if (diff <= -50) {
     document.body.classList.remove("small");
+    console.log(diff);
+    lastScrollY = currentY;
   }
-
-  console.log(lastScrollY);
-  console.log(currentY);
-
-  lastScrollY = currentY;
 });
 
 const showCategories = () => {
