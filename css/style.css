@@ -12,6 +12,11 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   direction: rtl;
+  padding-top: 13rem;
+  transition: all 200ms ease-in;
+}
+
+body.small {
   padding-top: 9rem;
 }
 
@@ -42,9 +47,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 9rem;
+  height: 13rem;
   background-color: #fff5d4;
   box-shadow: 0 0px 10px rgba(59, 37, 24, 1);
+  transition: all 200ms ease-in;
+}
+
+.small .top-bar {
+  height: 9rem;
 }
 
 .green {
@@ -72,6 +82,12 @@ body {
 }
 
 .header__logo {
+  width: 11rem;
+  height: 11rem;
+  transition: all 200ms ease-in;
+}
+
+.small .header__logo {
   width: 8rem;
   height: 8rem;
 }

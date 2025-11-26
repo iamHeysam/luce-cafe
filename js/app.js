@@ -136,6 +136,23 @@ const swiperContainer = document.querySelector(".mySwiper");
 const menuElem = document.querySelector(".menu");
 const categoriesElem = document.querySelector(".categories");
 
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const currentY = window.scrollY;
+
+  if (currentY > lastScrollY) {
+    document.body.classList.add("small");
+  } else {
+    document.body.classList.remove("small");
+  }
+
+  console.log(lastScrollY);
+  console.log(currentY);
+
+  lastScrollY = currentY;
+});
+
 const showCategories = () => {
   categoriesElem.innerHTML = "";
 
