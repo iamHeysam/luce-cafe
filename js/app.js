@@ -71,12 +71,12 @@ const menu = {
     {
       name: "گربه",
       price: "323",
-      about: "نبتینمبتنسیتبناس ابتسا بنتسنمبتمن",
+      about: "لیمو مرف ممد اخند",
     },
     {
       name: "سگ",
       price: "343",
-      about: " لبابالالالا تبتسنمتبنتنیبسیبشسبس",
+      about: "یه آه یه مکس یو یو احمق خر من از وقتی زاده شدم حبس ابدم",
     },
     {
       name: "میمون",
@@ -140,17 +140,14 @@ let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
   const currentY = window.scrollY;
-  const diff = currentY - lastScrollY;
 
-  if (diff >= 50) {
+  if (lastScrollY < currentY) {
     document.body.classList.add("small");
-    console.log(diff);
-    lastScrollY = currentY;
-  } else if (diff <= -50) {
+  } else {
     document.body.classList.remove("small");
-    console.log(diff);
-    lastScrollY = currentY;
   }
+
+  lastScrollY = currentY;
 });
 
 const showCategories = () => {
