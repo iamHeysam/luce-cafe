@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: "Iran Sans";
+  font-family: "dana";
 }
 
 body {
@@ -136,10 +136,9 @@ body.small {
 .menu-container__title {
   text-align: center;
   font-size: 3.5rem;
-  font-family: "TrajanPro bold";
+  font-family: "dana DemiBold";
   margin-bottom: 1rem;
   color: #634126;
-  text-shadow: 2px 2px 3px #63412693;
 }
 
 .categories {
