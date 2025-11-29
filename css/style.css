@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: "dana";
+  font-family: "Dana Medium";
 }
 
 body {
@@ -135,56 +135,61 @@ body.small {
 
 .menu-container__title {
   text-align: center;
-  font-size: 3.5rem;
-  font-family: "dana DemiBold";
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-family: "Dana DemiBold";
+  margin-bottom: 2rem;
   color: #634126;
 }
 
 .categories {
   display: flex;
-  row-gap: 1.5rem;
-  justify-content: center;
+  gap: 2rem 1rem;
   flex-wrap: wrap;
 }
 
 .category {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: calc(50% - 0.5rem);
+  border: 2px solid #634126;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.category__right {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 1.5rem;
-  color: #3b2518;
-  transition: all ease-in 200ms;
-}
-
-.category__icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #6b4729b7;
-  border-radius: 100%;
-  width: 7rem;
-  height: 7rem;
-}
-
-.category__icon {
-  fill: #6b4729ee;
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-.active .category__icon-box {
-  background-color: #6b4729ee;
-}
-
-.active .category__icon {
-  fill: #fff5d4;
+  width: 100%;
+  padding-left: 0.5rem;
 }
 
 .category__title {
-  font-size: 2.4rem;
-  color: #6b4729ee;
+  font-size: 2rem;
+  color: #634126;
+}
+
+.category__example {
+  color: #6b4729da;
+  font-size: 1.2rem;
+  font-family: "Dana Regular";
+}
+
+.category__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-right: 0.5rem;
+  border-right: 2px solid #634126;
+}
+
+.category__icon {
+  fill: #634126;
+  width: 3rem;
+  height: 3rem;
 }
 
 /* menu */
