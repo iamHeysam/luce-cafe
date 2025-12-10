@@ -153,8 +153,10 @@ body.small {
   justify-content: space-between;
   flex-basis: calc(50% - 0.5rem);
   border: 2px solid #634126;
+  background-color: #fff5d4;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  transition: all 200ms ease-in;
 }
 
 .category__right {
