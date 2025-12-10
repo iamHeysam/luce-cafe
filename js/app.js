@@ -312,8 +312,6 @@ const showMenu = (userSelected) => {
   menuElem.innerHTML = "";
 
   menuArray.forEach((categorySelected) => {
-    console.log(categorySelected.name);
-
     menuElem.insertAdjacentHTML(
       "beforeend",
       `
