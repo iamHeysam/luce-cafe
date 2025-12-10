@@ -194,6 +194,10 @@ body.small {
   height: 3rem;
 }
 
+.category.active {
+  background-color: black;
+}
+
 /* menu */
 
 .menu {
