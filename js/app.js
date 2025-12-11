@@ -294,9 +294,8 @@ const chooseMenuCategory = (event) => {
   if (selectedCategory) {
     document.querySelector(".active").classList.remove("active");
     selectedCategory.classList.add("active");
+    showMenu(selectedCategory.dataset.category);
   }
-
-  showMenu(selectedCategory.dataset.category);
 };
 
 const showMenu = (userSelected) => {
