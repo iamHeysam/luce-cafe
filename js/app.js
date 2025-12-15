@@ -70,7 +70,7 @@ const menu = {
   lunch: [
     {
       name: "گربه",
-      price: "323",
+      price: 323000,
       about: "لیمو مرف ممد اخند",
     },
     {
@@ -80,12 +80,12 @@ const menu = {
     },
     {
       name: "میمون",
-      price: "7777",
+      price: 7777,
       about: "بنتسنمبت",
     },
     {
       name: "کلبوک",
-      price: "76543",
+      price: 76543,
       about: "نبتینمبتنسیتبناس",
     },
     {
@@ -315,9 +315,11 @@ const showMenu = (userSelected) => {
       "beforeend",
       `
       <div class="menu-item">
-        <span class="menu-item__name">${categorySelected.name}</span>
-        <p class="menu-item__about">${categorySelected.about}</p>
-        <span class="menu-item__price">${categorySelected.price}</span>
+        <div>
+          <span class="menu-item__name">${categorySelected.name}</span>
+          <p class="menu-item__about">${categorySelected.about}</p>
+        </div>
+        <span class="menu-item__price">${categorySelected.price.toLocaleString()} تومان</span>
       </div>
       `
     );

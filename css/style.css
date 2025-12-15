@@ -242,16 +242,20 @@ body.small {
   justify-content: space-between;
   flex-direction: column;
   flex-basis: calc(50% - 0.5rem);
-  height: 228px;
-  border: 2px solid #6b4729b7;
+  height: 210px;
+  box-shadow: 0 0px 5px 0px rgba(59, 37, 24, 0.3);
+  background-color: #fffbee;
   border-radius: 0.5rem;
   padding: 2rem 1.5rem;
 }
 
 .menu-item__name {
+  display: block;
+  font-family: "Dana DemiBold";
   font-size: 2.2rem;
   color: #473628;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .menu-item__about {
@@ -271,7 +275,7 @@ body.small {
 .footer {
   padding: 4rem 0;
   /* background-color: #3c2619; */
-  box-shadow: 0 -5px 10px 0px rgba(59, 37, 24, 0.5);
+  box-shadow: 0 -5px 10px 0px rgba(59, 37, 24, 0.3);
   background-color: #fff5d4;
 }
 
