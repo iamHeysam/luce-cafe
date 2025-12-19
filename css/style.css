@@ -284,6 +284,15 @@ body.small {
   background-color: #fff8e1;
 }
 
+.about {
+  display: flex;
+}
+
+.numbers__icon {
+  width: 20px;
+  height: 20px;
+}
+
 .location {
   margin: 0 2rem;
 }
