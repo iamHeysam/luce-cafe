@@ -1,4 +1,5 @@
 @import "./fonts.css";
+@import "./reset.css";
 
 /* Difaults Css */
 
@@ -26,7 +27,11 @@ body.small {
 *::after,
 ::before {
   outline: none;
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hidden {
@@ -278,23 +283,89 @@ body.small {
 /* Footer */
 
 .footer {
-  padding: 2rem 0;
-  border-radius: 4rem 4rem 0 0;
+  padding: 2rem;
+  border-radius: 2rem;
   box-shadow: 0 -5px 10px 0px rgba(59, 37, 24, 0.1);
-  background-color: #fff8e1;
+  background-color: #fff;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .about {
   display: flex;
+  justify-content: space-between;
+  direction: ltr;
+  align-items: center;
+}
+
+.instagram {
+  width: 50%;
+  border-right: 1px solid #6b4729b7;
+}
+
+.instagram__link {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.instagram__wrapper-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.instagram__text {
+  color: #473628;
+  font-weight: 800;
+}
+
+.instagram__id {
+  font-size: 1.4rem;
+  color: #ce2b37;
+}
+
+.instagram__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.numbers {
+  width: 50%;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.numbers__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.numbers__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #00924727;
+  width: 25px;
+  height: 25px;
 }
 
 .numbers__icon {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  fill: #009246;
 }
 
-.location {
-  margin: 0 2rem;
+.number__text {
+  color: #473628;
+  font-weight: 600;
 }
 
 .map {

@@ -258,7 +258,11 @@ const menu = {
 
 const menuElem = document.querySelector(".menu");
 const categoriesElem = document.querySelector(".categories");
+
 let lastScrollY = window.scrollY;
+let isSmall = false;
+const EDGE = 80;
+const DELTA = 5;
 
 const showCategoties = () => {
   categoriesElem.innerHTML = "";
@@ -328,17 +332,44 @@ const showMenu = (userSelected) => {
 
 categoriesElem.addEventListener("click", chooseMenuCategory);
 
-window.addEventListener("scroll", () => {
-  const currentY = window.scrollY;
+window.addEventListener(
+  "scroll",
+  () => {
+    const currentY = window.scrollY;
 
-  if (lastScrollY < currentY) {
-    document.body.classList.add("small");
-  } else {
-    document.body.classList.remove("small");
-  }
+    if (Math.abs(currentY - lastScrollY) < DELTA) return;
 
-  lastScrollY = currentY;
-});
+    const docHeight = Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    );
+
+    const viewportHeight = window.innerHeight;
+
+    const atTop = currentY <= EDGE;
+    const atBottom = currentY + viewportHeight >= docHeight - EDGE;
+
+    if (atTop || atBottom) {
+      lastScrollY = currentY;
+      return;
+    }
+
+    const scrollingDown = currentY > lastScrollY;
+
+    if (scrollingDown && !isSmall) {
+      document.body.classList.add("small");
+      isSmall = true;
+    }
+
+    if (!scrollingDown && isSmall) {
+      document.body.classList.remove("small");
+      isSmall = false;
+    }
+
+    lastScrollY = currentY;
+  },
+  { passive: true }
+);
 
 window.addEventListener("load", () => {
   showCategoties();
