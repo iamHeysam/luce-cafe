@@ -143,14 +143,14 @@ a {
 .menu-container__title {
   text-align: center;
   font-size: 4rem;
-  font-weight: 930;
+  font-weight: 800;
   margin-bottom: 2rem;
   color: #634126;
 }
 
 .categories {
   display: flex;
-  gap: 2rem 1rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -158,7 +158,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: calc(50% - 0.5rem);
+  flex-basis: 100%;
   height: 62px;
   border: 2px solid #634126;
   background-color: #fff8e1;
@@ -220,6 +220,7 @@ a {
 .category.active .category__right .category__title {
   color: #fff5d4;
   font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .category.active .category__right .category__example {
@@ -250,7 +251,7 @@ a {
   justify-content: space-between;
   flex-direction: column;
   flex-basis: calc(50% - 0.5rem);
-  height: 210px;
+  height: 180px;
   box-shadow: 0 0px 5px 0px rgba(59, 37, 24, 0.3);
   background-color: #fff8e1;
   border-radius: 0.5rem;
