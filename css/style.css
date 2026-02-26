@@ -102,7 +102,8 @@ a {
 .main-header {
   direction: ltr;
   padding: 2rem 2rem 0;
-  background: linear-gradient(to left top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+  background:
+    linear-gradient(to left top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
     url(../imges/luce-bg.jpeg) no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -203,10 +204,17 @@ a {
 }
 
 .category__icon {
-  fill: #634126;
   width: 3rem;
   height: 3rem;
   transition: all 200ms ease-in;
+}
+
+.category__icon--fill {
+  fill: #634126;
+}
+
+.category__icon--stroke {
+  stroke: #634126;
 }
 
 .category.active {
@@ -232,8 +240,12 @@ a {
   border-color: #fff5d4;
 }
 
-.category.active .category__left .category__icon {
+.category.active .category__left .category__icon--fill {
   fill: #fff5d4;
+}
+
+.category.active .category__left .category__icon--stroke {
+  stroke: #fff5d4;
 }
 
 /* menu */
@@ -386,4 +398,9 @@ a {
   color: #473628;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.test {
+  fill: green;
+  stroke: green;
 }
